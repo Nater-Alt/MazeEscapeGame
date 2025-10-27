@@ -96,8 +96,10 @@ body {
   margin-bottom: 1rem;
 }
 
+#overlay.hidden,
+#result.hidden,
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 #result h1 {
