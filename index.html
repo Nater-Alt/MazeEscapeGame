@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maze Escape Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="overlay">
+    <h1>Maze Escape</h1>
+    <p>Click to begin and lock the mouse cursor.</p>
+    <ul>
+      <li>WASD to move, Space to jump, Shift to sprint</li>
+      <li>F toggles flashlight, TAB opens inventory, E interacts</li>
+    </ul>
+    <button id="startButton">Start</button>
+  </div>
+
+  <div id="hud">
+    <div id="staminaContainer">
+      <div id="staminaBar"></div>
+    </div>
+    <div id="flashlightStatus">Flashlight: Off</div>
+    <div id="batteryStatus">Battery: 100%</div>
+    <div id="objective">Find 3 keys and escape!</div>
+    <div id="messages"></div>
+  </div>
+
+  <div id="inventory" class="hidden">
+    <h2>Inventory</h2>
+    <div class="inventory-item">Batteries: <span id="inventoryBatteries">0</span> (press 1 to use)</div>
+    <div class="inventory-item">Keys: <span id="inventoryKeys">0</span></div>
+    <div class="inventory-item">
+      Notes:
+      <ul id="inventoryNotes"></ul>
+    </div>
+  </div>
+
+  <div id="result" class="hidden">
+    <h1 id="resultTitle"></h1>
+    <button id="restartButton">Restart</button>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
